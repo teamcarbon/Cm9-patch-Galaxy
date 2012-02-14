@@ -30,9 +30,8 @@ ifeq ($(TARGET_BOARD_PLATFORM), s5pc110)
 	LOCAL_CFLAGS += -DREFRESH_RATE=56
 endif
 
-# fix for animations lag - by MaclawPL
 ifeq ($(TARGET_BOARD_PLATFORM), msm7x27)
-	LOCAL_CFLAGS += -DREFRESH_RATE=59
+	LOCAL_CFLAGS += -DREFRESH_RATE=56
 endif
 # end of animations lag for msm7x27 (ealier msm7k)
 
@@ -73,4 +72,3 @@ endif
 LOCAL_MODULE:= libsurfaceflinger
 
 include $(BUILD_SHARED_LIBRARY)
-

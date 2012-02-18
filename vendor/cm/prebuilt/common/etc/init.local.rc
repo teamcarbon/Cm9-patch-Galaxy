@@ -1,0 +1,13 @@
+# CyanogenMod Extras
+
+# Compcache - handle at boot
+service compcache /system/bin/handle_compcache
+    user root
+    group root
+    oneshot
+
+# Market fix
+service run_drm /system/bin/run_drm
+    user root
+    group root
+    oneshot
